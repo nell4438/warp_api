@@ -1,8 +1,9 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
 
 const app = express();
-
+app.use(cors());
 const authHeader = 'VONEZ-TOKEN';
 const authToken = 'TANGINAMO-BOBO-KABA-HA';
 
